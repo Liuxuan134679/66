@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="你的名字 — 游戏 / 客户端程序员 · 作品集">
+  <defs>
+    <style>
+      .sans{font-family:'Noto Sans CJK SC','Source Han Sans SC','PingFang SC','Microsoft YaHei','Noto Serif CJK SC',system-ui,sans-serif;}
+      .mono{font-family:'JetBrains Mono','DejaVu Sans Mono',ui-monospace,monospace;}
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect x="16" y="16" width="1168" height="598" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="2"/>
+  <path d="M64 104 V64 H104" fill="none" stroke="#e60000" stroke-width="4"/>
+  <text x="80" y="172" class="mono" font-size="26" letter-spacing="5" fill="#6e6e73">刘炫 — 游戏 / 客户端程序员</text>
+  <text x="74" y="350" class="sans" font-size="132" font-weight="900" fill="#0a0a0a">把<tspan fill="#e60000">想法</tspan>，变成</text>
+  <text x="74" y="494" class="sans" font-size="132" font-weight="900" fill="#0a0a0a">可玩的世界</text>
+  <rect x="80" y="524" width="150" height="6" fill="#e60000"/>
+  <text x="80" y="586" class="mono" font-size="24" letter-spacing="4" fill="#0a0a0a">UNITY · C# · GAMEPLAY · AI</text>
+  <g transform="translate(1054,512)">
+    <rect width="66" height="66" rx="15" fill="#0a0a0a"/>
+    <path d="M25 19 L48 33 L25 47 Z" fill="#e60000"/>
+  </g>
+</svg>

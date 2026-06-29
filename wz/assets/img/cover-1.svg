@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="项目封面：记忆宫殿">
+  <defs>
+    <style>.mono{font-family:'JetBrains Mono','DejaVu Sans Mono',ui-monospace,monospace;}.sans{font-family:'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',system-ui,sans-serif;}</style>
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e60000" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#e60000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e60000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#f1f1f2"/>
+  <g stroke="#11111a" stroke-width="2" fill="none">
+    <line x1="40" y1="40" x2="430" y2="190"/>
+    <line x1="760" y1="40" x2="610" y2="190"/>
+    <line x1="40" y1="460" x2="430" y2="330"/>
+    <line x1="760" y1="460" x2="610" y2="330"/>
+    <rect x="430" y="190" width="180" height="140"/>
+    <rect x="492" y="232" width="56" height="98" fill="#ffffff"/>
+  </g>
+  <rect x="250" y="120" width="300" height="280" fill="none" stroke="#9a9aa2" stroke-width="2"/>
+  <path d="M400 470 L516 305" stroke="#e60000" stroke-width="3" fill="none" stroke-dasharray="7 9" stroke-linecap="round"/>
+  <circle cx="520" cy="285" r="46" fill="url(#orb1)"/>
+  <circle cx="520" cy="285" r="13" fill="#e60000"/>
+  <circle cx="520" cy="285" r="13" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <g stroke="#11111a" stroke-width="2" fill="#ffffff">
+    <path d="M180 250 l12 16 l-12 16 l-12 -16 z"/>
+    <path d="M330 205 l9 12 l-9 12 l-9 -12 z"/>
+  </g>
+  <path d="M624 250 l10 13 l-10 13 l-10 -13 z" fill="#e60000" stroke="#e60000" stroke-width="2"/>
+  <text x="40" y="476" class="mono" font-size="22" letter-spacing="2" font-weight="700" fill="#11111a">01 / Area Grid</text>
+  <text x="760" y="476" text-anchor="end" class="mono" font-size="16" letter-spacing="2" fill="#6e6e73">逻辑解谜 · 数独</text>
+</svg>

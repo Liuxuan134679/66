@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>刘炫 — 游戏 / 客户端程序员</title>
+  <meta name="description" content="游戏 / 客户端程序员，专注 Unity、C# 与玩法系统开发。极简个人作品集。" />
+  <meta name="author" content="刘炫" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="刘炫 — 游戏 / 客户端程序员" />
+  <meta property="og:description" content="游戏 / 客户端程序员，专注 Unity、C# 与玩法系统开发。" />
+  <meta property="og:image" content="./assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="刘炫 — 游戏 / 客户端程序员 · 作品集" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <noscript><style>#preloader{display:none!important}.js [data-reveal],.js [data-split]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#home">跳到主内容</a>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <svg class="redline-layer" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path class="redline redline--strong" d="M4.4 4.5 V24.5 C4.4 27.5 5.3 29.2 6.8 31 V72.5 C6.8 75 5.7 76.5 4.1 78 L7.1 81.5 C9.2 84 10.2 87.2 10.2 96" />
+    <path class="redline redline--soft" d="M6.8 16 V72.5 C6.8 75 5.7 76.5 4.1 78" />
+    <path class="redline redline--soft" d="M3 43 V73.3 C3 76.1 3.9 77.6 5.2 79.2" />
+    <path class="redline redline--strong" d="M92.7 21.5 V44.2 C92.7 46.3 93.2 48 94.1 49.4 V54.5 C94.1 57.1 93.1 58.9 91.4 60.8 L90.1 62.2 C88.8 63.7 88.2 65.5 88.2 67.9 V93.4" />
+    <path class="redline redline--soft" d="M90.1 31.5 V80" />
+    <path class="redline redline--soft" d="M95 43.8 V55.1" />
+    <g class="redline-dots">
+      <circle cx="8.7" cy="58.4" r=".11" />
+      <circle cx="8.7" cy="59.5" r=".11" />
+      <circle cx="8.7" cy="60.6" r=".11" />
+      <circle cx="8.7" cy="61.7" r=".11" />
+      <circle cx="8.7" cy="62.8" r=".11" />
+      <circle cx="94.5" cy="27.1" r=".11" />
+      <circle cx="94.5" cy="28.2" r=".11" />
+      <circle cx="94.5" cy="29.3" r=".11" />
+      <circle cx="94.5" cy="30.4" r=".11" />
+      <circle cx="94.5" cy="31.5" r=".11" />
+      <circle cx="90.1" cy="79.8" r=".11" />
+      <circle cx="90.1" cy="80.9" r=".11" />
+      <circle cx="90.1" cy="82" r=".11" />
+      <circle cx="90.1" cy="83.1" r=".11" />
+      <circle cx="90.1" cy="84.2" r=".11" />
+    </g>
+  </svg>
+
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__word mono">LOADING</span>
+      <span class="preloader__num mono"><span id="loadNum">0</span><span class="preloader__pct">%</span></span>
+    </div>
+    <div class="preloader__bar"><span id="loadBar"></span></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#home" aria-label="返回首页">刘炫<span class="nav__dot">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="主导航">
+        <a href="#about"><span class="nav__idx mono">01</span>关于</a>
+        <a href="#skills"><span class="nav__idx mono">02</span>技能</a>
+        <a href="#work"><span class="nav__idx mono">03</span>作品</a>
+        <a href="#contact"><span class="nav__idx mono">04</span>联系</a>
+        <a class="nav__resume" href="./assets/resume.pdf" target="_blank" rel="noopener">简历 ↗</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow mono">刘炫 — 游戏 / 客户端程序员</p>
+        <h1 class="hero__title hero__title--poster display">
+          <span class="hero__line hero__line--top">
+            <span class="hero__phrase hero__phrase--lead">把<span class="text-red">想法</span>，</span>
+            <span class="hero__phrase hero__phrase--right">变成可</span>
+          </span>
+          <span class="hero__line hero__line--bottom">玩的世界</span>
+        </h1>
+        <p class="hero__lead">成都东软学院在读 · 专注 Unity、C# 与玩法 / 系统开发，乐于把前沿技术落地进游戏。</p>
+        <div class="hero__actions">
+          <a class="link-underline" href="#work">查看作品</a>
+          <a class="link-underline" href="./assets/resume.pdf" target="_blank" rel="noopener">下载简历</a>
+        </div>
+      </div>
+      <div class="hero__cue mono" data-reveal aria-hidden="true">向下滚动 <span class="hero__cue-line"></span></div>
+    </section>
+
+    <!-- 关于：I'M A ___ 动画面板 ×3 -->
+    <section class="section panels about-showcase" id="about">
+      <div class="container">
+        <div class="section__head section__head--row about-showcase__head">
+          <p class="eyebrow mono" data-reveal>(01) 关于</p>
+          <h2 class="h2 display" data-split>关于我</h2>
+        </div>
+
+        <article class="panel">
+          <div class="panel__text">
+            <p class="panel__im mono" data-reveal>I'M A</p>
+            <h2 class="panel__role display" data-split>UNITY CLIENT ENGINEER</h2>
+            <p class="panel__sub" data-reveal>负责把想法落地成可玩的 Demo</p>
+          </div>
+          <div class="panel__art" data-reveal aria-hidden="true">
+            <svg class="mk" viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="游戏引擎界面动画">
+              <rect x="8" y="8" width="544" height="364" rx="16" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+              <line x1="8" y1="46" x2="552" y2="46" stroke="#e6e6e8" stroke-width="2"/>
+              <circle cx="30" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="46" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="62" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle class="mk-play" cx="500" cy="27" r="12" fill="#ff3b30"/>
+              <path class="mk-play" d="M495 21 L495 33 L507 27 Z" fill="#ffffff"/>
+              <rect x="24" y="62" width="120" height="234" rx="8" fill="#f6f6f7" stroke="#e6e6e8" stroke-width="1.5"/>
+              <rect x="36" y="80" width="82" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="34" y="100" width="100" height="16" rx="5" fill="rgba(255,59,48,.14)"/>
+              <rect x="44" y="104" width="70" height="8" rx="4" fill="#ff3b30"/>
+              <rect x="44" y="128" width="74" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="44" y="148" width="60" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="36" y="172" width="82" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="44" y="192" width="66" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="160" y="62" width="236" height="198" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+              <line x1="178" y1="228" x2="378" y2="228" stroke="#e0e0e2" stroke-width="2"/>
+              <ellipse class="mk-shadow" cx="278" cy="230" rx="30" ry="7" fill="#111111" opacity="0.26"/>
+              <g class="mk-ball">
+                <circle cx="278" cy="200" r="24" fill="#ff3b30"/>
+                <line x1="278" y1="200" x2="316" y2="200" stroke="#ff3b30" stroke-width="2"/>
+                <line x1="278" y1="200" x2="278" y2="166" stroke="#111111" stroke-width="2"/>
+              </g>
+              <rect x="408" y="62" width="120" height="198" rx="8" fill="#f6f6f7" stroke="#e6e6e8" stroke-width="1.5"/>
+              <rect x="420" y="80" width="64" height="8" rx="4" fill="#c9c9ce"/>
+              <rect x="420" y="104" width="40" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="470" y="104" width="46" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="420" y="124" width="40" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="470" y="124" width="46" height="8" rx="4" fill="#d7d7db"/>
+              <line x1="420" y1="152" x2="516" y2="152" stroke="#dcdce0" stroke-width="2"/>
+              <circle cx="470" cy="152" r="6" fill="#ff3b30"/>
+              <rect x="420" y="172" width="96" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="420" y="192" width="70" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="160" y="272" width="368" height="88" rx="8" fill="#f6f6f7" stroke="#e6e6e8" stroke-width="1.5"/>
+              <rect x="176" y="288" width="120" height="12" rx="6" fill="#d7d7db"/>
+              <rect x="304" y="288" width="80" height="12" rx="6" fill="#ff3b30" opacity="0.55"/>
+              <rect x="176" y="310" width="80" height="12" rx="6" fill="#d7d7db"/>
+              <rect x="264" y="310" width="140" height="12" rx="6" fill="#d7d7db"/>
+              <rect x="176" y="332" width="150" height="12" rx="6" fill="#d7d7db"/>
+              <rect x="334" y="332" width="60" height="12" rx="6" fill="#ff3b30" opacity="0.55"/>
+              <g class="mk-playhead">
+                <line x1="196" y1="280" x2="196" y2="352" stroke="#ff3b30" stroke-width="2"/>
+                <path d="M190 280 L202 280 L196 288 Z" fill="#ff3b30"/>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel__text">
+            <p class="panel__im mono" data-reveal>I'M A</p>
+            <h2 class="panel__role display" data-split>AI EXPLORER</h2>
+            <p class="panel__sub" data-reveal>探索 AI 驱动的游戏与工具链可能性</p>
+          </div>
+          <div class="panel__art" data-reveal aria-hidden="true">
+            <svg class="mk" viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="神经网络动画">
+              <rect x="8" y="8" width="544" height="364" rx="16" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+              <line x1="8" y1="46" x2="552" y2="46" stroke="#e6e6e8" stroke-width="2"/>
+              <circle cx="30" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="46" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="62" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle class="ai-live" cx="502" cy="27" r="6" fill="#ff3b30"/>
+              <g class="ai-edge" stroke="#cdcdd2" stroke-width="1.5" fill="none">
+                <line x1="140" y1="140" x2="300" y2="120"/><line x1="140" y1="140" x2="300" y2="185"/><line x1="140" y1="140" x2="300" y2="250"/>
+                <line x1="140" y1="200" x2="300" y2="120"/><line x1="140" y1="200" x2="300" y2="185"/><line x1="140" y1="200" x2="300" y2="250"/>
+                <line x1="140" y1="260" x2="300" y2="120"/><line x1="140" y1="260" x2="300" y2="185"/><line x1="140" y1="260" x2="300" y2="250"/>
+                <line x1="300" y1="120" x2="450" y2="160"/><line x1="300" y1="120" x2="450" y2="225"/>
+                <line x1="300" y1="185" x2="450" y2="160"/><line x1="300" y1="185" x2="450" y2="225"/>
+                <line x1="300" y1="250" x2="450" y2="160"/><line x1="300" y1="250" x2="450" y2="225"/>
+              </g>
+              <g fill="#ffffff" stroke="#111111" stroke-width="2">
+                <circle class="ai-node" style="animation-delay:0ms" cx="140" cy="140" r="13"/>
+                <circle class="ai-node" style="animation-delay:200ms" cx="140" cy="200" r="13" fill="#ff3b30"/>
+                <circle class="ai-node" style="animation-delay:400ms" cx="140" cy="260" r="13"/>
+                <circle class="ai-node" style="animation-delay:150ms" cx="300" cy="120" r="13"/>
+                <circle class="ai-node" style="animation-delay:500ms" cx="300" cy="185" r="13" fill="#ff3b30"/>
+                <circle class="ai-node" style="animation-delay:300ms" cx="300" cy="250" r="13"/>
+                <circle class="ai-node" style="animation-delay:650ms" cx="450" cy="160" r="13" fill="#ff3b30"/>
+                <circle class="ai-node" style="animation-delay:350ms" cx="450" cy="225" r="13"/>
+              </g>
+              <rect x="70" y="300" width="420" height="46" rx="9" fill="#f6f6f7" stroke="#e6e6e8" stroke-width="1.5"/>
+              <rect x="88" y="318" width="280" height="10" rx="5" fill="#d7d7db"/>
+              <rect class="ai-cursor" x="378" y="312" width="3" height="22" fill="#ff3b30"/>
+              <rect x="452" y="313" width="22" height="20" rx="5" fill="#ff3b30"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel__text">
+            <p class="panel__im mono" data-reveal>I'M A</p>
+            <h2 class="panel__role display" data-split>GAME ENTHUSIAST</h2>
+            <p class="panel__sub" data-reveal>热爱玩法设计与互动体验构建</p>
+          </div>
+          <div class="panel__art" data-reveal aria-hidden="true">
+            <svg class="mk" viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="游戏与手柄动画">
+              <rect x="8" y="8" width="544" height="364" rx="16" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+              <line x1="8" y1="46" x2="552" y2="46" stroke="#e6e6e8" stroke-width="2"/>
+              <circle cx="30" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="46" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <circle cx="62" cy="27" r="4" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <rect x="70" y="62" width="420" height="178" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+              <circle cx="92" cy="84" r="5" fill="#ff3b30"/>
+              <circle cx="108" cy="84" r="5" fill="#ff3b30"/>
+              <circle cx="124" cy="84" r="5" fill="none" stroke="#111111" stroke-width="1.5"/>
+              <rect x="410" y="80" width="58" height="8" rx="4" fill="#d7d7db"/>
+              <rect x="432" y="94" width="36" height="8" rx="4" fill="#d7d7db"/>
+              <line x1="86" y1="210" x2="474" y2="210" stroke="#e0e0e2" stroke-width="2"/>
+              <ellipse cx="134" cy="212" rx="16" ry="4" fill="#111111" opacity="0.18"/>
+              <g class="gm-hop"><rect x="120" y="178" width="28" height="28" rx="6" fill="#ff3b30"/></g>
+              <g class="gm-coin"><circle cx="402" cy="150" r="13" fill="none" stroke="#111111" stroke-width="2"/><circle cx="402" cy="150" r="5" fill="#ff3b30"/></g>
+              <rect x="160" y="266" width="240" height="82" rx="30" fill="#f6f6f7" stroke="#111111" stroke-width="2"/>
+              <rect x="204" y="290" width="12" height="36" rx="3" fill="#111111"/>
+              <rect x="192" y="302" width="36" height="12" rx="3" fill="#111111"/>
+              <circle cx="346" cy="300" r="12" fill="none" stroke="#111111" stroke-width="2"/>
+              <circle class="gm-btn" cx="376" cy="314" r="12" fill="#ff3b30"/>
+            </svg>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <p class="eyebrow mono" data-reveal>(02) 技能</p>
+          <h2 class="h2 display" data-split>能力栈</h2>
+        </div>
+        <div class="skill-scenes" aria-label="技能栈">
+          <article class="skill-scene" data-reveal>
+            <div class="skill-scene__word display" aria-hidden="true">ENGINE</div>
+            <div class="skill-scene__body">
+              <span class="skill-scene__idx mono">01</span>
+              <h3 class="skill-scene__title mono">ENGINE</h3>
+              <ul class="skill-list">
+                <li>Unity</li>
+                <li>URP</li>
+                <li>UGUI</li>
+                <li>XR Interaction Toolkit</li>
+                <li>DOTween</li>
+              </ul>
+              <p class="skill-scene__note">负责场景、交互、UI 与运行时系统搭建</p>
+            </div>
+          </article>
+
+          <article class="skill-scene skill-scene--reverse" data-reveal>
+            <div class="skill-scene__word skill-scene__word--solid display" aria-hidden="true">CODE</div>
+            <div class="skill-scene__body">
+              <span class="skill-scene__idx mono">02</span>
+              <h3 class="skill-scene__title mono">CODE</h3>
+              <ul class="skill-list">
+                <li>C#</li>
+                <li>C++</li>
+                <li>Lua</li>
+                <li>Python</li>
+                <li>Git</li>
+              </ul>
+              <p class="skill-scene__note">关注模块拆分、状态管理、工具化与可维护性</p>
+            </div>
+          </article>
+
+          <article class="skill-scene" data-reveal>
+            <div class="skill-scene__word display" aria-hidden="true">TECH</div>
+            <div class="skill-scene__body">
+              <span class="skill-scene__idx mono">03</span>
+              <h3 class="skill-scene__title mono">TECH</h3>
+              <ul class="skill-list">
+                <li>Shader</li>
+                <li>AI Integration</li>
+                <li>3D Reconstruction</li>
+                <li>Editor Tools</li>
+              </ul>
+              <p class="skill-scene__note">把技术点转成可展示、可运行、可复用的功能</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <p class="eyebrow mono" data-reveal>(03) 作品</p>
+          <h2 class="h2 display" data-split>精选作品</h2>
+        </div>
+        <div class="works" id="works"></div>
+      </div>
+    </section>
+
+    <section class="section section--invert" id="contact">
+      <div class="container">
+        <p class="eyebrow mono" data-reveal>(04) 联系</p>
+        <a class="contact__mail display" href="mailto:k463882702022@163.com" data-split>k463882702022@163.com</a>
+        <p class="contact__note" data-reveal>正在寻找游戏 / 客户端程序方向的实习或全职机会。</p>
+        <div class="contact__links" data-reveal>
+          <a class="link-underline link-underline--light" href="https://github.com/Liuxuan134679" target="_blank" rel="noopener">GitHub</a>
+          <a class="link-underline link-underline--light" href="https://liuxuan134679.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono">© <span id="year"></span> 刘炫</span>
+      <a class="mono link-underline" href="#home">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="./projects.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
